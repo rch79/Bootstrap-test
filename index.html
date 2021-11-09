@@ -9,13 +9,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 <body>
-    <article class="container">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a href="/" class="navbar-brand">Alcohol Drop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Cheap alcohol delivered to your door</i></p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
+    </nav>
+    <article class="container mt-3">
         <!-- Callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
                     <h1>The strongest alcohol delivered to your directly to your liver</h1>
-                    <p class="lead"> Sign today and get <s>30%</s> <strong><mark>15% off your next rehab stint</mark></strong></p>
+                    <p class="lead"> Sign today and get <s class="d-none d-sm-inline">30%</s>
+                    <span class="d-inline d-sm-none"><br></span>
+                    <strong><mark>15% off your next rehab stint</mark></strong></p>
                     <button type="button" class="btn btn-success btn-lg">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up for our service.</small></p>
                 </section>
@@ -27,7 +41,7 @@
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes: </h2>
                 </div>
             </div>
@@ -52,7 +66,7 @@
         <!-- Features-->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features: </h2>
                 </div>
             </div>
