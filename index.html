@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alcohol Drop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -50,9 +51,9 @@
                 <section class="callout jumbotron text-center">
                     <h1>The strongest alcohol delivered to your directly to your liver</h1>
                     <p class="lead"> Sign today and get <s class="d-none d-sm-inline">30%</s>
-                    <span class="d-inline d-sm-none"><br></span>
-                    <strong><mark>15% off your next rehab stint</mark></strong></p>
-                    <button type="button" class="btn btn-success btn-lg">Sign Up!</button>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>15% off your next rehab stint</mark></strong></p>
+                    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up for our service.</small></p>
                 </section>
             </div>
@@ -179,6 +180,38 @@
         </section>
         <!-- /.monthly favorites -->
     </article>
+
+    <div class="modal" tabindex="-1" id="signUpModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sign Up</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="repeatPassword">Repeat Password</label>
+                    <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+                  </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
